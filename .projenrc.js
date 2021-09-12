@@ -14,4 +14,7 @@ const project = new TypeScriptAppProject({
     }
   },  
 });
+
+project.gitignore.addPatterns('/build')
+
 project.synth();

@@ -1,0 +1,19 @@
+{
+    "typescript.referencesCodeLens.enabled": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "cSpell.words": [
+      "Creds",
+      "DCHAN",
+      "IDCHAN",
+      "Interfacer",
+      "Typeorm"
+    ],
+    "workbench.colorCustomizations": {
+      "parameterHints.hintBackground": "#00000000",
+      "parameterHints.hintForeground": "#767676"
+    },
+    "parameterHints.hintingType": "typeOnly"
+  }
+  
