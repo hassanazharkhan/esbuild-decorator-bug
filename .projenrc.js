@@ -2,11 +2,16 @@ const { TypeScriptAppProject } = require('projen');
 const project = new TypeScriptAppProject({
   defaultReleaseBranch: 'main',
   name: 'decorators-bug',
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
-  // release: undefined,      /* Add release management to this project. */
+  deps: ['reflect-metadata', '@shiftcoders/dynamo-easy', 'aws-sdk'],
+  devDeps: ['esbuild'],
+  codeCov: true,
+  authorName: 'Hassan Azhar Khan',
+  authorEmail: 'hassanazharkhan@gmail.com',
+  tsconfig: {
+    compilerOptions: {
+      experimentalDecorators: true,
+      emitDecoratorMetadata: true
+    }
+  },  
 });
 project.synth();
